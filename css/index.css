@@ -1,3 +1,396 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+	/*<-----------------WEB VIEW ------------------*/
+
+hr {
+	border-top: 2px solid black;
+	width: 84%;
+}
+
+
+.navigation {
+	width: 100%;
+	height: 10vh;
+	padding-top: 3%;
+	text-align: center;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: row;
+}
+
+.list {
+	width: 69%;
+	text-align: center;
+	
+}
+
+.list a {
+	margin: 0% 3% 0% 3%;
+	font-size: 1.3em;
+	opacity: 0.6; 
+	 filter: alpha(opacity = 60);
+	 cursor: pointer;
+	 text-decoration: none;
+	 color:black;
+}
+
+.logo {
+	padding-right: 13%;
+}
+
+.intro, .info, .img, .info-2, .info-services-end {
+	display: flex;
+	padding: 3% 1% 5% 1%;
+	justify-content: space-around;
+}
+
+h1 {
+	font-size: 6em;
+	text-align: center;
+}
+
+button {
+	border-radius: 1px;
+	font-size: 1.3em;
+	padding: 7px 55px 7px 55px;
+	border:1px solid black;
+	margin-left: 25%;
+	cursor: pointer;
+}
+
+.inovation, .code {
+    height: 400px;
+ }
+
+.middle-img {
+
+}
+
+.info-one, .info-two, .info-one-services {
+    height: 100px;
+    padding: 0% 4% 1% 4%;
+    margin: 0% 4% 1% 4%;
+    align-self: center;
+}
+
+.info-one-services {
+	margin-bottom: 3%;
+}
+
+.img {
+	display: flex;
+	justify-content: center;
+}
+
+.middle-img, .services-header-img {
+	min-width: 85%;
+	height: auto;
+}
+
+.info-service, .info-product, .info-vision {
+	height: 250px;
+	padding: 0% 4% 0% 4%;
+    margin: 0% 4% 0% 4%;
+    align-self: center;
+
+}
+
+.contact {
+	height: 200px;
+	width: 20%;
+	padding-left: 9%;
+	padding-top: 3%;
+}
+
+address p {
+	line-height: 2em;
+}
+
+p {
+	line-height: 1.3em;
+}
+
+.end {
+	text-align: center;
+	margin:10%;
+}
+
+/*------------Services starts here*------------------------*/
+
+h2 {
+	font-size: 2em;
+}
+
+.info-2-services {
+	display: flex;	
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.info-services {
+	border:1px solid black;
+	width: 40%;
+	background:#d3d3d3;
+	margin:2%;
+	padding: 2%;
+}
+
+.button-services {
+	margin:5% 5% 0 0;
+	padding: 7px 35px 7px 35px;
+	border:1px solid black;
+	border-radius: 5px;
+	font-size: 1em;
+}
+
+.info-services-end {
+	margin:0;
+	padding: 0;
+	display: flex;
+}
+.info-services-end-child {
+	width: 40%;
+	padding: 2% 3% 0% 3%;
+}
+
+.services-info-img {
+	width: 100%;
+}
+ ul {
+	 margin: 4%;
+	 line-height: 2em;
+  }
+
+
+/*  <--------------------Tablet view ------------------>*/
+
+@media only screen and ( max-width: 800px) {
+
+	.navigation {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+
+	.list, .logo {
+		width: 100%;
+	}
+
+	.logo {
+		width: 50%;
+		padding: 2%;
+	}
+    .code {
+    	display: none;
+    }
+
+    .info-service, .info-product, .info-vision {
+    	height: 300px;
+    }
+
+    .info-one-services {
+    	margin-bottom: 7%;
+    }
+
+    .info-2 {
+    	padding-bottom: 0%;
+    }
+
+    .info-one, .info-two {
+    	height: 150px;
+    }
+
+
+    .img {
+    	padding: 3% 7% 3% 7%;
+    }
+
+    p {
+    	line-height: 1em;
+    }
+
+    .list a {
+    	color: black;
+    	opacity: 0.6;
+    }
+}
+
+/*<---------------Mobile View ------------------->
+*/
+@media only screen and (max-width: 500px) {
+
+	.nav {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.section-info, .info, .info-2 {
+		display: flex;
+		flex-direction: column;
+		padding-top:5%;
+	}
+	
+	.navigation {
+		height: 450px;
+	}
+
+	.inovation {
+		height: 500px;
+	}
+
+	.logo {
+		padding: 0;
+		margin:10px;
+	}
+
+	.list {
+		display: flex;
+		flex-direction: column;
+		height: 85%;
+	}
+
+	.list a {
+		width:100%;
+		align-self: center;
+		color:black;
+		line-height: 2.4em;
+		opacity: 0.5;
+		border-bottom: 2px solid gray;
+		width: 80%;
+	}
+
+	#services {
+		border-top: 2px solid gray;
+		width: 80%;
+	}
+
+	.info-one-services {
+		height: 150px;
+	}
+
+	.intro {
+		height: 350px;
+	}
+
+	 .img {
+    	padding: 0% 7% 5% 7%;
+    }
+
+	.info-service, .info-product, .info-vision {
+    	height: 150px;
+    }
+
+	h1 {
+		font-size: 4em;
+	}
+    button {
+	    border-radius: 1px;
+	    font-size: 1em;
+	    padding: 7px 40px 7px 40px;
+	    border: 1px solid black;
+	    margin-left: 20%;
+	}
+
+	.mobile-hr {
+	/*	opacity: 0.6;*/
+		width: 85%;
+		border-top: 2px solid black;
+	}
+
+	.contact {
+		width: 50%;
+	}
+
+/*	<----------services page ---------->*/
+    .info-2-services {
+    	display: flex;
+    	flex-direction: column;
+    	justify-content: center;
+    	align-items: center;
+    }
+
+    .info-services {
+    	width: 85%;
+    }
+
+    .button-services {
+    	margin-left:120px;
+    }
+
+    ul {
+    	margin:11%;
+    }
+
+    .info-services-end {
+    	display: flex;
+    	flex-direction: column;
+    }
+
+    .info-services-end p {
+    	line-height: 2em;
+    }
+
+    .info-services-end-child {
+    	width: 100%;
+    	padding: 2% 7% 3% 8%;
+    }
+    
+}
